@@ -124,10 +124,14 @@ docker-compose up -d
 
 ## 문서
 
+### 프로젝트 문서
 - [📋 프로젝트 명세서](.speckit/spec.md)
 - [📝 개발 계획서](.speckit/plan.md)
 - [✅ 태스크 목록](.speckit/tasks.md)
 - [🏛️ 프로젝트 원칙](.speckit/constitution.md)
+
+### AI Assistant 문서
+- [🤖 Claude 작업 지침서](.claude/instructions.md) - Claude AI가 따라야 할 규칙
 
 ## 라이센스
 

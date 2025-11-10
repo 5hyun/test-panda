@@ -18,13 +18,20 @@
 ### 1.1 프로젝트 초기 설정
 
 #### Frontend 설정 🔴 P0
-- [ ] Next.js 16 프로젝트 생성
+- [ ] pnpm 설치 (글로벌)
   ```bash
-  npx create-next-app@latest frontend --typescript --tailwind --app
+  npm install -g pnpm
+  # 또는 Homebrew (macOS)
+  brew install pnpm
+  ```
+- [ ] Next.js 16 프로젝트 생성 (pnpm + Turbopack)
+  ```bash
+  pnpm create next-app@latest frontend --typescript --tailwind --app --turbo
+  cd frontend
   ```
 - [ ] shadcn/ui 초기화
   ```bash
-  npx shadcn-ui@latest init
+  pnpm dlx shadcn@latest init
   ```
 - [ ] Tailwind CSS 커스텀 설정 (`tailwind.config.js`)
   - 디자인 시스템 컬러 팔레트 적용

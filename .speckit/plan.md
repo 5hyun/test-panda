@@ -19,9 +19,10 @@
 
 | 기술 | 버전 | 용도 |
 |-----|------|------|
-| **Next.js** | 16 (App Router) | React 프레임워크, SSR/SSG |
+| **Next.js** | 16 (App Router + Turbopack) | React 프레임워크, SSR/SSG |
 | **React** | 19 | UI 라이브러리 |
 | **TypeScript** | 5.x | 타입 안전성 |
+| **pnpm** | 9.x | 패키지 매니저 (고속 의존성 관리) |
 | **Tailwind CSS** | 3.x | 유틸리티 우선 CSS 프레임워크 |
 | **shadcn/ui** | latest | UI 컴포넌트 라이브러리 |
 | **Zustand** | 4.x | 가벼운 글로벌 상태 관리 |

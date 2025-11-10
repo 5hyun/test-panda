@@ -56,10 +56,27 @@ chore: pnpm 워크스페이스 설정
 
 ## 📋 태스크 관리
 
+### 세션 시작 시 (필수!)
+1. **`.speckit/tasks.md` 파일 확인**
+   - 어떤 작업이 완료되었는지 확인
+   - 다음에 할 작업 파악
+   - 진행 상황 파악 후 작업 시작
+
 ### TodoWrite 도구 사용
 - 복잡한 작업 시작 시 TodoWrite로 태스크 리스트 생성
 - 태스크 상태 실시간 업데이트
 - 태스크 완료 시 즉시 completed로 변경
+
+### .speckit/tasks.md 체크박스 업데이트 (중요!)
+- ✅ **작업 완료 시 즉시 체크박스 업데이트**
+  ```markdown
+  - [ ] 작업 항목  →  - [x] 작업 항목
+  ```
+- ✅ **체크박스 업데이트 후 즉시 커밋**
+  ```bash
+  git add .speckit/tasks.md && git commit -m "docs: [작업명] 완료 체크"
+  ```
+- ✅ **세션 재연결 대비**: tasks.md가 진행 상황의 단일 진실 공급원(Single Source of Truth)
 
 ---
 
@@ -163,10 +180,15 @@ src/pages/auth/login/ui/login-page.tsx → 커밋
 
 ## ✅ 체크리스트 (매 작업마다 확인)
 
-작업 시작 전:
+세션 시작 시:
+- [ ] `.speckit/tasks.md` 확인 (어디까지 했는지 파악)
+- [ ] git log로 최근 커밋 확인
 - [ ] constitution.md의 Git 규칙 확인
+
+작업 시작 전:
 - [ ] FSD 구조에 맞는 위치 파악
 - [ ] 작업을 작은 단위로 나눔
+- [ ] TodoWrite로 태스크 리스트 생성 (복잡한 작업 시)
 
 작업 중:
 - [ ] 파일 하나 작성 완료 시 즉시 커밋
@@ -176,7 +198,7 @@ src/pages/auth/login/ui/login-page.tsx → 커밋
 작업 완료:
 - [ ] 모든 변경사항 커밋 완료 확인
 - [ ] git status로 unstaged 파일 없는지 확인
-- [ ] tasks.md 체크박스 업데이트
+- [ ] **.speckit/tasks.md 체크박스 업데이트 + 커밋** (매우 중요!)
 
 ---
 

@@ -1,0 +1,26 @@
+{
+  "autoApprove": {
+    "enabled": true,
+    "patterns": [
+      "/Users/kwon-ohhyun/Desktop/test-panda/**"
+    ],
+    "tools": [
+      "Read",
+      "Write",
+      "Edit",
+      "Bash",
+      "Glob",
+      "Grep"
+    ],
+    "excludePatterns": [
+      "**/.git/**",
+      "**/node_modules/**",
+      "**/.env"
+    ]
+  },
+  "permissions": {
+    "allowFileOperations": true,
+    "allowBashCommands": true,
+    "allowGitOperations": true
+  }
+}

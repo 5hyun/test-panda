@@ -18,7 +18,7 @@
 ### 1.1 프로젝트 초기 설정
 
 #### Frontend 설정 🔴 P0
-- [ ] Next.js 15 프로젝트 생성
+- [ ] Next.js 16 프로젝트 생성
   ```bash
   npx create-next-app@latest frontend --typescript --tailwind --app
   ```
@@ -30,12 +30,19 @@
   - 디자인 시스템 컬러 팔레트 적용
   - 커스텀 border-radius, box-shadow 추가
 - [ ] TypeScript 설정 (`tsconfig.json`)
-  - Path alias 설정 (`@/`)
+  - Path alias 설정 (`@/`, `@app/`, `@processes/`, `@pages/`, `@widgets/`, `@features/`, `@entities/`, `@shared/`)
   - Strict 모드 활성화
 - [ ] ESLint 설정 (`.eslintrc.json`)
 - [ ] Prettier 설정 (`.prettierrc`)
 - [ ] `.env.local` 파일 생성 (환경 변수 템플릿)
-- [ ] 폴더 구조 생성 (`components/`, `lib/`, `hooks/`, `stores/`, `types/`, `mocks/`)
+- [ ] FSD 폴더 구조 생성
+  - `src/app/` (Application Layer)
+  - `src/processes/` (Processes Layer)
+  - `src/pages/` (Pages Layer)
+  - `src/widgets/` (Widgets Layer)
+  - `src/features/` (Features Layer)
+  - `src/entities/` (Entities Layer)
+  - `src/shared/` (Shared Layer)
 
 #### Backend 설정 🔴 P0
 - [ ] API Gateway 프로젝트 생성 (Spring Initializr)

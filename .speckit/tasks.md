@@ -18,31 +18,31 @@
 ### 1.1 프로젝트 초기 설정
 
 #### Frontend 설정 🔴 P0
-- [ ] pnpm 설치 (글로벌)
+- [x] pnpm 설치 (글로벌)
   ```bash
   npm install -g pnpm
   # 또는 Homebrew (macOS)
   brew install pnpm
   ```
-- [ ] Next.js 16 프로젝트 생성 (pnpm + Turbopack)
+- [x] Next.js 16 프로젝트 생성 (pnpm + Turbopack)
   ```bash
   pnpm create next-app@latest frontend --typescript --tailwind --app --turbo
   cd frontend
   ```
-- [ ] shadcn/ui 초기화
+- [x] shadcn/ui 초기화
   ```bash
   pnpm dlx shadcn@latest init
   ```
-- [ ] Tailwind CSS 커스텀 설정 (`tailwind.config.js`)
-  - 디자인 시스템 컬러 팔레트 적용
-  - 커스텀 border-radius, box-shadow 추가
-- [ ] TypeScript 설정 (`tsconfig.json`)
+- [x] Tailwind CSS 커스텀 설정 (`tailwind.config.js`)
+  - 디자인 시스템 컬러 팔레트 적용 (핑크/코랄/노랑)
+  - 커스텀 border-radius (1rem) 적용
+- [x] TypeScript 설정 (`tsconfig.json`)
   - Path alias 설정 (`@/`, `@app/`, `@processes/`, `@pages/`, `@widgets/`, `@features/`, `@entities/`, `@shared/`)
   - Strict 모드 활성화
-- [ ] ESLint 설정 (`.eslintrc.json`)
-- [ ] Prettier 설정 (`.prettierrc`)
-- [ ] `.env.local` 파일 생성 (환경 변수 템플릿)
-- [ ] FSD 폴더 구조 생성
+- [x] ESLint 설정 (`.eslintrc.json`)
+- [x] Prettier 설정 (`.prettierrc`)
+- [x] `.env.local` 파일 생성 (환경 변수 템플릿)
+- [x] FSD 폴더 구조 생성
   - `src/app/` (Application Layer)
   - `src/processes/` (Processes Layer)
   - `src/pages/` (Pages Layer)

@@ -1,0 +1,48 @@
+# Auth Service 설정
+server:
+  port: 8081
+
+spring:
+  application:
+    name: auth-service
+
+  # MySQL 데이터베이스 설정
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/test_panda_auth?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA 설정
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO:update}
+    show-sql: ${SHOW_SQL:true}
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    open-in-view: false
+
+# Actuator 설정
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+
+# JWT 설정
+jwt:
+  secret: ${JWT_SECRET:test-panda-secret-key-change-in-production-please}
+  expiration: ${JWT_EXPIRATION:86400000}  # 24시간 (밀리초)
+  refresh-expiration: ${JWT_REFRESH_EXPIRATION:604800000}  # 7일 (밀리초)
+
+# 로깅 설정
+logging:
+  level:
+    com.testpanda.auth: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG

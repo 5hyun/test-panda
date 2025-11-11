@@ -52,29 +52,29 @@
   - `src/shared/` (Shared Layer)
 
 #### Backend 설정 🔴 P0
-- [ ] API Gateway 프로젝트 생성 (Spring Initializr)
+- [x] API Gateway 프로젝트 생성 (Spring Initializr)
   - Dependencies: Spring Cloud Gateway, Spring Boot Actuator
-- [ ] Auth Service 프로젝트 생성 (Spring Initializr)
+- [x] Auth Service 프로젝트 생성 (Spring Initializr)
   - Dependencies: Spring Web, Spring Data JPA, MySQL Driver, Spring Security, Lombok
-- [ ] Core Service 프로젝트 생성 (Spring Initializr)
+- [x] Core Service 프로젝트 생성 (Spring Initializr)
   - Dependencies: Spring Web, Spring Data JPA, PostgreSQL Driver, Spring Security, Lombok
-- [ ] 각 서비스 `application.yml` 기본 설정
+- [x] 각 서비스 `application.yml` 기본 설정
   - 서버 포트 설정 (Gateway: 8080, Auth: 8081, Core: 8082)
   - 데이터베이스 연결 정보 (환경 변수 사용)
 - [ ] Lombok 설정 확인 (IDE 플러그인 설치)
 
 #### Git 저장소 설정 🔴 P0
-- [ ] Git 저장소 초기화
+- [x] Git 저장소 초기화
   ```bash
   git init
   ```
-- [ ] `.gitignore` 파일 작성 (Node, Java, IDE 파일 제외)
+- [x] `.gitignore` 파일 작성 (Node, Java, IDE 파일 제외)
 - [ ] 브랜치 전략 수립
   - `main`: 프로덕션
   - `develop`: 개발
   - `feature/*`: 기능 개발
   - `hotfix/*`: 긴급 수정
-- [ ] 초기 커밋 및 원격 저장소 푸시
+- [x] 초기 커밋 및 원격 저장소 푸시
 
 ---
 

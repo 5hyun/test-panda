@@ -55,9 +55,7 @@ next-env.d.ts
 .gradle/
 build/
 target/
-.mvn/
-mvnw
-mvnw.cmd
+# Maven Wrapper는 포함 (프로젝트 빌드에 필요)
 
 # Database
 *.db

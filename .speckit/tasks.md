@@ -81,7 +81,7 @@
 ### 1.2 Docker 환경 구성
 
 #### Docker Compose 작성 🔴 P0
-- [ ] `docker-compose.yml` 작성
+- [x] `docker-compose.yml` 작성
   - MySQL 컨테이너 (Auth Service용)
   - PostgreSQL 컨테이너 (Core Service용)
   - Redis 컨테이너 (캐싱, 세션)
@@ -89,15 +89,15 @@
   - API Gateway 컨테이너
   - Auth Service 컨테이너
   - Core Service 컨테이너
-- [ ] 네트워크 설정 (모든 서비스가 같은 네트워크에 속하도록)
-- [ ] 볼륨 설정 (데이터 영속성)
-- [ ] 환경 변수 설정 (`.env` 파일)
+- [x] 네트워크 설정 (모든 서비스가 같은 네트워크에 속하도록)
+- [x] 볼륨 설정 (데이터 영속성)
+- [x] 환경 변수 설정 (`.env` 파일)
 
 #### Dockerfile 작성 🔴 P0
-- [ ] API Gateway `Dockerfile`
+- [x] API Gateway `Dockerfile`
   - Multi-stage build (Maven + OpenJDK)
-- [ ] Auth Service `Dockerfile`
-- [ ] Core Service `Dockerfile`
+- [x] Auth Service `Dockerfile`
+- [x] Core Service `Dockerfile`
 - [ ] Frontend `Dockerfile` (프로덕션용, 선택 사항)
 
 #### 로컬 테스트 🔴 P0

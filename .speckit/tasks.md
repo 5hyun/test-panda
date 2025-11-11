@@ -236,17 +236,17 @@
 ### 2.1 Backend - Auth Service 구현
 
 #### 엔티티 및 Repository 🔴 P0
-- [ ] `User` 엔티티 작성
+- [x] `User` 엔티티 작성
   - JPA 어노테이션 (`@Entity`, `@Table`, `@Id`, `@GeneratedValue`)
   - Lombok (`@Data`, `@NoArgsConstructor`, `@AllArgsConstructor`)
   - 필드: `id`, `email`, `password`, `name`, `role`, `emailVerified`, `provider`, `providerId`, `createdAt`, `updatedAt`
-- [ ] `Role` enum 작성 (`TEACHER`, `STUDENT`)
-- [ ] `AuthToken` 엔티티 작성
-- [ ] `EmailVerification` 엔티티 작성
-- [ ] `UserRepository` 인터페이스 작성 (JpaRepository 상속)
+- [x] `Role` enum 작성 (`TEACHER`, `STUDENT`)
+- [x] `AuthToken` 엔티티 작성
+- [x] `EmailVerification` 엔티티 작성
+- [x] `UserRepository` 인터페이스 작성 (JpaRepository 상속)
   - 커스텀 메서드: `findByEmail()`, `existsByEmail()`
-- [ ] `AuthTokenRepository` 작성
-- [ ] `EmailVerificationRepository` 작성
+- [x] `AuthTokenRepository` 작성
+- [x] `EmailVerificationRepository` 작성
 
 #### JWT 토큰 생성 및 검증 🔴 P0
 - [ ] JWT 의존성 추가 (`pom.xml`: `io.jsonwebtoken:jjwt`)

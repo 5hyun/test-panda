@@ -164,9 +164,9 @@
   - `users` 테이블
   - `auth_tokens` 테이블
   - `email_verifications` 테이블
-- [ ] Flyway 의존성 추가 (`pom.xml`)
-- [ ] Flyway 설정 (`application.yml`)
-- [ ] V1 마이그레이션 스크립트 작성
+- [x] Flyway 의존성 추가 (`pom.xml`)
+- [x] Flyway 설정 (`application.yml`)
+- [x] V1 마이그레이션 스크립트 작성
   - `src/main/resources/db/migration/V1__init_auth_schema.sql`
   ```sql
   CREATE TABLE users (
@@ -213,9 +213,9 @@
 #### Core Service (PostgreSQL) 스키마 설계 🔴 P0
 - [ ] ERD 작성
   - `groups`, `group_members`, `exams`, `exam_groups`, `questions`, `submissions`, `answers`, `custom_columns`, `custom_scores` 테이블
-- [ ] Flyway 의존성 추가
-- [ ] Flyway 설정
-- [ ] V1 마이그레이션 스크립트 작성
+- [x] Flyway 의존성 추가
+- [x] Flyway 설정
+- [x] V1 마이그레이션 스크립트 작성
   - `src/main/resources/db/migration/V1__init_core_schema.sql`
   - `groups` 테이블 생성
   - `group_members` 테이블 생성 (FK 설정)
